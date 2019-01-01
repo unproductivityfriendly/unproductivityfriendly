@@ -1,0 +1,23 @@
+svg#boardbackground {
+	position: relative;
+}
+svg#board {
+	position: absolute;
+	left: 0;
+}
+
+#board #grid {
+	opacity: 0.1;
+}
+
+#board .character {
+}
+
+#board, #boardbackground {
+	width: 100%;
+	height: calc(100% - 2px);
+}
+
+#cults, #grid, #overlay, #regions {
+	display: none;
+}

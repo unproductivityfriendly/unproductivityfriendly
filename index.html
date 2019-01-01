@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test</title>
+	<meta charset=utf-8>
+	<meta name=description content="isekaitest">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/default.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/board.css">
+</head>
+<body>
+	<svg id="boardbackground" viewBox="0 100 1865 817" preserveAspectRatio="xMidYMid">
+		<g id="zsimplemap" x="0" y="0" width="1920" height="1080" loadmap="map/simple.html"></g>
+	</svg>
+	<svg id="board" viewBox="0 100 1865 817" preserveAspectRatio="xMidYMid" xmlns:svg="http://www.w3.org/2000/svg"
+     xmlns="http://www.w3.org/2000/svg">
+		<defs id="environment-defs" game-ui-init="view/board/environment.html"></defs>
+		<defs id="building-defs" game-ui-init="view/board/building.html"></defs>
+		<g id="environment" class="board-layer"></g>
+		<g id="building" class="board-layer"></g>
+		<g id="character" class="board-layer"></g>
+		<!-- <g id="gridlayer" class="board-layer">
+			<rect width="1920" height="1080" fill="url(#grid10000km)" />
+		</g> -->
+	</svg>
+
+	<div game-ui-init="view/worldInfo.html"></div>
+	<div><!-- 
+		<script src="js/lib/d3.min.js"></script>
+		<script src="js/lib/priority-queue.min.js"></script>
+		<script src="js/lib/language.js"></script>
+		<script src="js/lib/terrain.js"></script> -->
+		<script src="js/game/main.js" type="module"></script>
+	</div>
+</body>
+</html>
